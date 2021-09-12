@@ -9,11 +9,11 @@ print(my_variable)
 print(age)
 
 # rules for declaration
-#all lowercase unless a constant
-# you cannot start with a special character
-# you cannot start with a number
+# all lowercase unless a constant
+# you cannot start with a special character, except underscore (ERROR)
+# you cannot start with a number (ERROR)
 # no keywords
-# if need of aspace, use underscore
+# if need of a space, use underscore
 
 
 # pep8 - style guide for python
