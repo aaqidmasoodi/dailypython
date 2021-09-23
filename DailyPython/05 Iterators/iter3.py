@@ -36,8 +36,6 @@ num = 10
 #     count += 1
 
 
-# for _ in iter(int, 1):
-#     print('Hello')
 
 while num > 0:
     num -= 1
