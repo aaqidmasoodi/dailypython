@@ -1,6 +1,11 @@
-def tower(n, start, end, middle):
-    if n == 1:
+def tower(disks, start, end, middle):
+    if disks == 1:
         print(f'Move Disk from {start} to {end}') 
-    tower(n-1, start, middle, end)
-    print(f'Move Disk from {start} to {end}')
-    tower(n-1, middle, end, start)
+    else:
+        tower(disks-1, start, middle, end)
+        print(f'Move Disk from {start} to {end}')
+        tower(disks-1, middle, end, start)
+
+
+
+tower(3,'A','C','B')
