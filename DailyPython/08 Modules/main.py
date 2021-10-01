@@ -11,8 +11,14 @@
 # print(y)
 
 # methord overloading X
+import sys
+sys.path.append('/home/neo/Desktop/Personal_Modules') # XX
 
-import my_module
+print(sys.path)
+import dailypython
+
+
+# DO NOT TRY THIS AT HOME
 
 
 
