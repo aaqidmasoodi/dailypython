@@ -7,6 +7,6 @@
 print('Hello Mateen')
 print('Hello Dayim')
 print('Hello Numair')
-print(x)
+# print(x)
 print('Hello Sidrat')
 print('Hello Tawqeer')
