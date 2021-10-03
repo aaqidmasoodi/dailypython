@@ -6,7 +6,6 @@ LOCAL - ENCLOSING - GLOBAL - BUILIN
 '''
 # import builtins
 
-
 # print(dir(builtins))
 # x = 'g var'
 # y = '100'
