@@ -1,15 +1,16 @@
-names = ['Sidrat','Aaqid','Dayim','Mateen','Numair','Kaiser']
+names = ['Sidrat','Aaqid','Dayim','Mateen','Numair','Kaiser','Shugufta']
 semesters = ['2nd','7th','5th']
-ages = [21,21,21,21,21,21]
 
-# zip()
+
+
+# mega jugaad
 # for i, name in enumerate(names):
 #     sem = semesters[i]
 #     print(name, sem)
 
-print('**********')
-for name, sem, age in zip(names, semesters, ages): ### zip will only go upto ()
-    print(name, sem, age)
+for name, sem in zip(names, semesters):
+    print(name, sem)
+
 
 # itertools
-# ziplargest()
+# zip_longest

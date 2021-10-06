@@ -6,9 +6,8 @@ names = ['Sidrat','Aaqid','Dayim','Mateen','Numair','Kaiser']
 #     print(index, name)
 #     index += 1
 
-print('******')
 
-for obj in enumerate(names):
-    print(obj)
+for index, value in enumerate(names):
+    print(index, value)
 
 

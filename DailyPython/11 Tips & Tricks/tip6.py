@@ -4,24 +4,30 @@
 
 
 list1 = [1,0,5,6]
-list2 = ["",True,True]
+list2 = ["",True,2<3]
 list3 = ["Aaqid","Kaiser","Mateen","Dayim"]
-list4 = ['',0,{},[]]
-
-# print(any(list4))
+list4 = ['',0,{},[],5>12,5]
 
 
-x = 13
-y = 55
-z = 81
+print(any(list4)) # whether there is a true value in an iterable | OR
 
-conditions = [
-    x > 10,
-    y > 90,
-    z > 100
+mark1 = 15
+mark2 = 95
+mark3 = 12
+mark4 = 16
+'''
+.
+.
+.
+.
+'''
+
+checks = [
+    mark1 > 18, 
+    mark2 > 13, 
+    mark3 > 10, 
+    mark4 > 5
 ]
 
-if all(conditions):
+if any(checks):
     print('Hello World')
-
-
