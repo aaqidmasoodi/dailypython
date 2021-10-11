@@ -8,7 +8,7 @@ else:
 
 x = 'Aaqid' if conditon else 0
 
-# obj if condition else obj
+# obj if condition else 0
 
 
 
