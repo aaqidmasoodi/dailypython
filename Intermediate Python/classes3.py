@@ -19,8 +19,8 @@ d2.likes = 'Football'
 print(d1.__dict__)
 print(d2.__dict__)
 
-# print(d1.get_name_lang())
+print(d1.get_name_lang())
 # print(d2.get_name_lang())
 
 # print(Developer.get_name_lang(d1))
-print(d1.get_name_lang())
+# print(d1.get_name_lang())

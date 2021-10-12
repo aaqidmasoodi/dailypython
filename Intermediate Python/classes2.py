@@ -16,12 +16,12 @@ dev2 = Developer()
 
 
 
-# making attr for dev1 # instan
+# making attr for dev1 # instance
 dev1.name = 'Aaqid'
 dev1.age = 21
 dev1.language = 'Python'
 
-# making attr for dev2
+# making attr for dev2 # instance
 dev2.name = 'Asif'
 dev2.age = 21
 dev2.language = 'C++'
@@ -30,7 +30,7 @@ dev2.region = 'J&K'
 print(dev1.name)
 print(dev1.age)
 print(dev1.language)
-print(dev1.region)
+# print(dev1.region)
 
 
 

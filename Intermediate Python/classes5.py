@@ -25,12 +25,16 @@ emp2 = Employee('Asif',50000)
 print(emp1.get_salary())
 print(emp2.get_salary())
 
+
+# Employee.get_salary(emp1)
+
 # emp2.set_salary(5000)
 
 # print(emp1.get_salary())
 # print(emp2.get_salary())
 
-Employee.set_salary(emp1, 6000)
+Employee.set_salary(emp1, 6000) # you will not use it
+emp1.set_salary(12000) # auto passing of instance
 
 
 print(emp1.get_salary())
