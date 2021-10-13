@@ -21,20 +21,20 @@ class Rectangle:
         return self.breadth
 
 
-my_rectangles = []
+# my_rectangles = []
 
-for i in range(20):
-    my_rectangles.append(Rectangle())
+# for i in range(20):
+#     my_rectangles.append(Rectangle())
 
 
-for i in range(20):
-    print(my_rectangles[i].get_length())
+# for i in range(20):
+#     print(my_rectangles[i].get_length())
 
-print('+++')
+# print('+++')
 
-for my_rect in my_rectangles:
-    print(my_rect.get_length())
+# for my_rect in my_rectangles:
+#     print(my_rect.get_length())
 
-print('+++')
-for rect in my_rectangles:
-    print(rect.get_length() * rect.get_breadth())
+# print('+++')
+# for rect in my_rectangles:
+#     print(rect.get_length() * rect.get_breadth())
