@@ -18,7 +18,8 @@ class Employee:
         cls.raise_amount = new_raise_amount
 
 
-    def say_hello():
+    
+    def say_hello(): # regular method
         return 'hello world'
 
 
