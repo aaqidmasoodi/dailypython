@@ -7,7 +7,7 @@ class User:
 
     def __init__(self, username='', password=''):
         self._username = username
-        self.__password = password
+        self.__password = password # name clashes # it becomes harder to access
         User.users += 1
         User.all.append(self) # common practice
 
