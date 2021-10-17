@@ -4,10 +4,9 @@ class Animal:
 
 
 class Dog(Animal):
-
     pass
-
     
+
 class GermanShepherd(Dog):
 
     def __init__(self):
