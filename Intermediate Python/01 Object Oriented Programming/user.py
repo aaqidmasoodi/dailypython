@@ -32,6 +32,9 @@ class Student(User):
         self.semester = semester
 
 
+class Admin(User):
+
+   pass
 
 
 s1 = Student('mateen','1234','student')
