@@ -1,6 +1,8 @@
 class Developer:
-    pass
+    def __init__(self):
+        pass
+        
 
 d1 = Developer()
 
-print(dir(d1))
+print(d1)

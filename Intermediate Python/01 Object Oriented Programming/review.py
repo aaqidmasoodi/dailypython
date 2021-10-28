@@ -26,3 +26,10 @@ MyClass.set_name(myobj2, 'Numair')
 
 print(myobj2.get_name())
 print(myobj.get_name())
+
+# creating classes and object
+# class varibles
+# class method, static, instance
+# inheritance (polymophism)
+#
+

@@ -12,8 +12,10 @@ class Dog:
     def say_hello(): # cannot modify instance
         return 'Hello World' # helpers 
 
-# 
-print(Dog.say_hello())
 
+
+d1 = Dog()
+
+d1.say_hello()
 
 # Inheritance
