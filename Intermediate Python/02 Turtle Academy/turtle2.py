@@ -25,6 +25,8 @@ dy = 5
 # Main Loop
 while True:
     
+
+    # Moving the ball
     # set the x # get the x
     ball.setx(ball.xcor() + dx) # varibles
     ball.sety(ball.ycor() + dy) 
