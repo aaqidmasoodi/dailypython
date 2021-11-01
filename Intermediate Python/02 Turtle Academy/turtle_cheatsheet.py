@@ -1,10 +1,13 @@
 # introduced turtle
-# learning a graphics tools
+# learning a graphics tool
 # how to create a screen
     # changing various screen attributes
     # changing the width and the height 
     # change the background color of the turtle screen
     # rename the turtle window
+
+# HAVE SYSTEMS ALONG
+
 
 # how to create turlte object
     # forward()
