@@ -42,6 +42,6 @@ while True:
 
 
     scr.update()
-    # time.sleep(1/60)
+    time.sleep(1/60)
 
 
