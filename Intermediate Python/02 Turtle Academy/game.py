@@ -24,6 +24,31 @@ paddle_b.goto(350, 0)
 
 
 
+# EVENT LISTENER
+# EVENTS --- >> mouseclicks , keypressed, movement , 
+
+def paddle_a_up():
+
+    paddle_a.sety(paddle_a.ycor() + 20)
+    
+
+
+def paddle_a_down():
+
+    paddle_a.sety(paddle_a.ycor() - 20)
+
+
+# handling events
+# HOW DO YOU KNWO THIS KI AISE H RNA H YE?
+scr.listen()
+# THE MOST IMPORTANT THING OF ALL
+scr.onkeypress(paddle_a_up, 'w') # None
+scr.onkeypress(paddle_a_down, 's') # DO NOT CALL THE FUNCTION
+
+
+
+print(paddle_a.ycor())
+
 
 while True:
     scr.update()
