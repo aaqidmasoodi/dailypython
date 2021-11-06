@@ -1,4 +1,5 @@
 import turtle
+import math
 
 
 def init_screen(width=800, height=600, color='lightgreen', title='#DailyPython', tracer=0):
@@ -12,7 +13,7 @@ def init_screen(width=800, height=600, color='lightgreen', title='#DailyPython',
 
 
 
-def create_ball(shape='circle', color='blue', speed=0):
+def create_shape(shape='circle', color='blue', speed=0):
     ball = turtle.Turtle()
     ball.shape(shape)
     ball.color(color)
@@ -38,3 +39,14 @@ def create_paddle(shape='square', speed=0, color='brown', placement='horizontal'
     
 
     return paddle
+
+
+
+
+def get_distance(object1, object2):
+
+    distance = math.sqrt(
+        math.pow(object2.xcor() - object1.xcor(), 2) + \
+        math.pow(object2.ycor() - object1.ycor(), 2))
+        
+    return distance

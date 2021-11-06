@@ -2,8 +2,7 @@ import turtle
 
 
 scr = turtle.Screen()
-scr.tracer(1)
-
+scr.tracer(0)
 
 
 
@@ -17,6 +16,10 @@ tut.goto(250,250)
 tut.goto(-250,250)
 tut.goto(500,500)
 
+
+
+tut.setx(0)
+tut.sety(0)
 
 while True:
 

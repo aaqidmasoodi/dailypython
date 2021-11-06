@@ -1,6 +1,10 @@
+import turtle
 import helper as hlp
 import time
 
+
+score_a = 0
+score_b = 0
 
 scr = hlp.init_screen()
 
@@ -10,7 +14,7 @@ ball.dx = 1
 ball.dy = 1
 ball.goto(200,200)
 
-
+turtle
 # paddle A
 paddle_a = hlp.create_paddle(placement='vertical',color='purple')
 paddle_a.goto(-350, 0)
@@ -46,11 +50,21 @@ def paddle_b_down():
         paddle_b.sety(paddle_b.ycor() - 20)
 
 
+# score_writer
+score_writer = turtle.Turtle()
+score_writer.hideturtle()
+score_writer.penup()
+score_writer.goto(0,250)
+score_writer.color('red')
+score_writer.write(f'SCORE A: {score_a} | SCORE B: {score_b}', align='center', font=('OpenSans',24,'bold'))
+
+# RUNNING IN PARRALEL
+
 # handling events
 # HOW DO YOU KNOW KI AISEHI KRNA H?
 scr.listen()
 # THE MOST IMPORTANT THING OF ALL
-scr.onkeypress(paddle_a_up, 'W') # None
+scr.onkeypress(paddle_a_up, 'w') # None
 scr.onkeypress(paddle_a_down, 's') # DO NOT CALL THE FUNCTION
 scr.onkeypress(paddle_b_up, 'Up')
 scr.onkeypress(paddle_b_down, 'Down')
@@ -87,10 +101,13 @@ def is_colliding_paddle_a():
 
     return False
 
+# blit() --<< DRAW
 
 
-
+# Main Loop
 while True:
+
+
 
     # Move the ball
 
@@ -106,9 +123,22 @@ while True:
     elif ball.ycor() < -290:
         ball.dy *= -1
 
-    if ball.xcor() >390 or ball.xcor() < -390:
+    if ball.xcor() >390:
         ball.dx *= -1
         ball.goto(0,0)
+        score_a += 1
+        score_writer.clear()
+        score_writer.write(f'SCORE A: {score_a} | SCORE B: {score_b}', align='center', font=('OpenSans',24,'bold'))
+
+
+
+    if ball.xcor() < -390:
+        ball.dx *= -1
+        ball.goto(0,0)
+        score_b += 1
+        score_writer.clear()
+        score_writer.write(f'SCORE A: {score_a} | SCORE B: {score_b}', align='center', font=('OpenSans',24,'bold'))
+
 
 
 
@@ -127,7 +157,7 @@ while True:
     time.sleep(1/240)
 
 
-
-
-
 # TRY TO IMPLEMENT THE SCORING MECHANICSM FOR PONG
+
+
+# PYGAME
