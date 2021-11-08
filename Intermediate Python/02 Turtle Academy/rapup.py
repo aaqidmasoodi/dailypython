@@ -1,8 +1,8 @@
 import turtle
 import helper as hlp
 import time
-
-
+import random
+import math
 
 scr = hlp.init_screen()
 
@@ -10,8 +10,6 @@ scr = hlp.init_screen()
 # player object
 
 player = hlp.create_shape(shape='square', color='darkblue')
-
-
 
 
 movement = 2
@@ -22,9 +20,11 @@ player.dy = 0
 # food object
 
 food = hlp.create_shape(shape='circle', color='red')
-spawn_index = 0
-food_spawn_coordinates = [(-150,150), (300,0), (150,80), (140,90)]
-food.goto(food_spawn_coordinates[spawn_index])
+
+
+# writer
+writer = turtle.Turtle()
+
 
 
 
@@ -50,14 +50,13 @@ def move_down():
 
 
 def is_collision(player, food):
-    distance = hlp.get_distance(player, food)
-
+    distance = math.sqrt(math.pow(food.xcor() - player.xcor(), 2) + math.pow(food.ycor() - player.ycor(), 2))
+    writer.clear()
+    writer.write(f'{int(distance)}', font=('OpenSans',50))
     if distance < 20:
         return True
 
     return False
-
-
 
 
 scr.listen()
@@ -95,10 +94,7 @@ while True:
 
 
     if is_collision(player, food):
-        if spawn_index > 3:
-            spawn_index = 0
-        food.goto(food_spawn_coordinates[spawn_index])
-        spawn_index += 1
+        print('collision')
 
         
 

@@ -27,3 +27,12 @@
 
     # penup() # lifts the pen up
     # pendown() # puts the pen down
+
+
+    # event listers
+    # .listen()
+    # .onkeypress(ffun, 'key')
+
+
+
+# DO ONE SIMPLE PROJECT

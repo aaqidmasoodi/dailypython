@@ -5,14 +5,7 @@
 # special method __init__, __str__ , __repr__
 
 
-# class Vehicle
-
-
-# no_of_wheel
-
-
-# Bus
-
-
-# Car
+# @Property --->>> DEVELOPER COMMUNITY LOVES THIS
+# setters
+# deleters
 
