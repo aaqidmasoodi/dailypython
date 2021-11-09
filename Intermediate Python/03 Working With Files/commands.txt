@@ -1,0 +1,30 @@
+pwd -->> print working directory (folder)
+ls -->> list all files/and directory (folder)
+ls -ll ->> list with a little bit more info
+# dir
+
+cd -->> change directory
+.. ->> parent directory
+. -->> current directory --> provide a relative path
+
+clear -->> clean the terniaml # linux/unix
+cls -->> clean the ternimal # windows
+
+mkdir --> make directory -->> create directory
+
+/ -->> for linux/unix
+\ -->> for windows
+
+
+touch -->> create a text file
+
+# use very carefully
+rm --> remove
+rm -r -->> remove a directory
+rm * --->> remove all files
+rm -r * -->> remove all files as well directories
+
+
+
+cp -->> copying files
+mv -->> moving files
