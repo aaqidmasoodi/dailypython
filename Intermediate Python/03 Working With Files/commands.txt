@@ -1,13 +1,20 @@
+# on window you can use powershell
+
 pwd -->> print working directory (folder)
 ls -->> list all files/and directory (folder)
 ls -ll ->> list with a little bit more info
+-rwxr-wr--
 # dir
 
 cd -->> change directory
 .. ->> parent directory
-. -->> current directory --> provide a relative path
+. -->> current directory --> provide a relative path cd ~ 
+~ -->> home folder
+/ -->> root
 
 clear -->> clean the terniaml # linux/unix
+
+
 cls -->> clean the ternimal # windows
 
 mkdir --> make directory -->> create directory
@@ -20,11 +27,11 @@ touch -->> create a text file
 
 # use very carefully
 rm --> remove
-rm -r -->> remove a directory
+rm -r -->> remove a directory(folder)
 rm * --->> remove all files
 rm -r * -->> remove all files as well directories
 
 
 
-cp -->> copying files
-mv -->> moving files
+cp -->> copying files --->> makes a duplicate
+mv -->> moving files --->> moves the file 

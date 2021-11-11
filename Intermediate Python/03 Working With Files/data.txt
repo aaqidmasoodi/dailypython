@@ -1,0 +1,7 @@
+5
+red
+diamond
+121
+93
+platinum
+True
