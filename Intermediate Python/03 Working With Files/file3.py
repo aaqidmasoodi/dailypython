@@ -1,7 +1,5 @@
-f = open('story.txt', 'r')
+with open('story.txt', 'r') as f:
+    contents = f.readlines()
+    contents.append('Hello World')
+    print(contents)
 
-for i in range(5):
-    content = f.readline() # will not read the entire file
-    print(content)
-
-f.close()
