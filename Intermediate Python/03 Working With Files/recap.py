@@ -31,6 +31,11 @@
 
 #.seek(offset, from_where) -->> 0,1 --->> from_what default to the start of the file 0
              #0,1,2
+
+
+             # 0 -->> from start of file
+             # 1 -->> current location
+             # 2 -->> end of file
 #seek(0)
 
 # context manager -->> with obj as something:
