@@ -6,6 +6,8 @@
 # w ->> write
 # a ->> append
 # r+ ->> read/write
+# w+-->> write/read
+
 # wb ->> write binary
 # rb ->> read binary
 

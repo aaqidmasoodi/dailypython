@@ -15,3 +15,8 @@ print(new_message)
 # read a file
 # shift it
 # encrypt the same file
+
+
+# try encrptin a file
+# try to frequency analise it
+# try to figure out the key
