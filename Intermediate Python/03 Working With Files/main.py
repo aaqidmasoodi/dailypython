@@ -1,40 +1,10 @@
-# . -->> BASE_DIR -->> DAILY PYTHON FOLDER
+# BASE_DIR
+# TOP-LEVEL
 
-BASE_DIR = '/home/neo/Documents/Workshop/dailypython'
 
-with open('newfile_zt.txt', 'r') as f:
+# no need of slash of inpython
+# YOU DO NOT WORK WITH FILE PATH
+# YOU INSTEAD THE OS MODULES
+with open('./Intermediate Python/03 Working With Files/dailytxt2.txt', 'w') as f:
     pass
 
-
-# rb
-# wb
-
-
-# file path
-# os
-# sys
-# itertools
-# regex
-# random
-# csv
-# json
-# 
-# .
-# .
-# .
-
-# THEY HAVE CERTICATE
-
-# External
-# BeautifulSoup
-# TwitterAPI
-
-
-# modules -->> buildin modules
-# pip -- Package manager for python 
-# PyPi -->> 
-
-
-# NOW YOU CAN CHECK YOUTUBE ALSO
-# TRY TO DO AS MANY AS YOU CAN
-# POINT IS TO LEARN
