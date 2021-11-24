@@ -1,9 +1,13 @@
+# this is all you'll need.
 import os
+
 
 # Change Directory (Folder)
 os.chdir('/home/neo/Documents/Workshop/dailypython/Intermediate Python')
+
 # get Current working Directory
 print(os.getcwd()) # -> returns a path
+
 # list all the directories
 print(os.listdir()) # -->> you can also give a path
 
@@ -14,6 +18,7 @@ os.makedirs('newfolder/myfold/myfold3') # creates an entire directory tree
 
 os.rmdir() # -->> remove a single empty directory
 os.removemdirs() # -->> remove an entire directory tree
+# you can only remove empty dirs
 
 
 # stuxnet
@@ -36,7 +41,10 @@ os.rename('newfile.txt', 'renamed.txt') # rename files
 
 # walk an entire directory structure
 # from top dir
-for dirpath, dirnames, filenames in os.walk(): # traverse a tree structure
+
+
+
+for dirpath, dirnames, filenames in os.walk(os.getcwd()): # traverse a tree structure
     print(f'DIR_PATHS: {dirpath}')
     print(f'DIR_NAMES: {dirnames}')
     print(f'FILE_NAMES: {filenames}')
@@ -64,3 +72,42 @@ print(os.path.isfile('renamed.txt')) # -->> returns true or false
 print(os.path.isdir('myfold')) # -->> returns true or false
 
 
+
+mypath = '/home/neo/html/something.txt'
+
+# return the lead
+print(os.path.basename(mypath))
+
+# returns the dir
+print(os.path.dirname(mypath))
+
+
+# spliting the extentions
+filepath, ext = os.path.splitext(mypath)
+print(ext)
+
+
+# exists
+print(os.path.exists('./something'))
+
+
+print(os.environ.get('MYOWNVAR')) # very very useful
+# it is python dict that keepng record of all env variables on the variable
+
+
+
+os.system() # execute raw command
+# it will be system specific
+
+os.remove() # -->> remove all files 
+
+
+
+
+# target system -->> DESKTOP --> Myfolder
+# DO NOT HARD CODE PATH
+# TRY THIS SIMPLE PROJECT USING PYTHON"S OS MODULE
+# make a folder
+# put files and folders into 
+# copy all files (not folders) into another folder
+# INTRODUCTION TO MALWARE
