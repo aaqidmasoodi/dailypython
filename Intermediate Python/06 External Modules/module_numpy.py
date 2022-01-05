@@ -2,7 +2,7 @@ import numpy as np  # essentially provides your arrays in python
 
 # sys.getsizeof(arr)
 
-arr = np.array([122,5,0]) # it will take one object 
+arr = np.array([1,2,3], dtype='float64') # it will take one object 
 # you should for the most part specify a data type
 
 # attributes about numpy arrays are:
