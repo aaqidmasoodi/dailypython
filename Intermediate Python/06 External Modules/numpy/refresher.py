@@ -20,6 +20,7 @@ print(arr)
 # GRAPH IS MATRIX
 
 # Sample 1
+
 """
 
 0 0 0 1 1 0

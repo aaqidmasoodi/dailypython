@@ -7,8 +7,6 @@ arr = np.array([1,2,3,4,5,6])
 # you create a new array of 2n
 # you copy elements of old array in the new array
 
-
-
 # numpy arrays will throw an index error
 # arr[5]
 

@@ -18,7 +18,10 @@ myarr = np.zeros((500,500), dtype='int64')
 myarr = np.ones((5,5), dtype='uint8')
 
 
-myarr = np.full(mat1.shape, 6, dtype='int8')
+myarr = np.full(mat1.shape, 6, dtype='int8') # what is happening here?
+
+
+myarr = np.full_like(mat1, 6,  dtype='int8')
 
 [[6,6,6],
 [6,6,6]]
@@ -26,14 +29,13 @@ myarr = np.full(mat1.shape, 6, dtype='int8')
 print(myarr)
 
 
+# Without the use of full or full like 
+
+
 # CREATE ARRAYS
 # WORKING WITH ARRAYS
-# INIT DIFFERENT TYPES <-
-# ARRAY MATH
-# LINEAR MATH
-# REORGANIZATION
-# BOOLEAN MASKING 
-
-# PANDAS
-
-
+# INIT DIFFERENT TYPES 
+# ARRAY MATH 
+# LINEAR MATH - 3 functions - 100s when ? 
+# REORGANIZATION (INDEX)
+# BOOLEAN MASKING <- real deal!!
