@@ -1,6 +1,6 @@
 import cv2 as cv
 
-capture = cv.VideoCapture(0)
+capture = cv.VideoCapture('cat_video.mp4')
 
 
 while True:
@@ -10,7 +10,7 @@ while True:
  
 
 #  # Every 1 millisecond i am checking whether i am pressing q
-  if cv.waitKey(20) & 0xFF == ord('q'):
+  if cv.waitKey(1) & 0xFF == ord('q'):
     break
 
 capture.release()
