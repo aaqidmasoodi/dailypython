@@ -1,11 +1,12 @@
 import cv2 as cv
 
 capture = cv.VideoCapture('face.mp4')
-
+# help(capture.set)
 
 while True:
  ret, frame = capture.read()
 
+ 
  frame = cv.resize(frame, (int(frame.shape[1]*0.5),int(frame.shape[0]*0.5)), cv.INTER_CUBIC)
 
  blurred_frame = cv.GaussianBlur(frame, (3,3), cv.BORDER_DEFAULT)
