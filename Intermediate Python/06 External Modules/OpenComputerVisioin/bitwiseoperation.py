@@ -10,7 +10,7 @@ cv.rectangle(square_img, (20,20), (480,480), 255, thickness=cv.FILLED)
 cv.circle(circle_img, (250,250), 250, 255, thickness=cv.FILLED)
 
 
-intersection_img = cv.bitwise_xor(square_img, circle_img)
+intersection_img = cv.bitwise_not(square_img) # mask
 
 # DIY
 # cv.bitwise_or()
@@ -25,5 +25,8 @@ cv.imshow('Square', square_img)
 cv.imshow('Circle', circle_img)
 cv.imshow('Intersection (AND)', intersection_img)
 
+# detecting contours
+# masking
+# 
 
 cv.waitKey(0)

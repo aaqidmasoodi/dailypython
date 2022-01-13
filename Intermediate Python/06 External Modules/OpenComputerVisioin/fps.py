@@ -1,6 +1,8 @@
 # how to calculate actual frame per second being processeed
 # 60fps 35fps
 
+# google ml model
+
 import cv2 as cv
 import time
 
@@ -11,6 +13,7 @@ capture = cv.VideoCapture('face.mp4')
 
 c_time = 0
 p_time = 0
+
 
 while True:
 

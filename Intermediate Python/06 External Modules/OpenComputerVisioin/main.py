@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 # ---------------------------- RANGE?? 0-255
-myimg = np.full((500,500), 255, dtype='uint8')
+# myimg = np.full((500,500), 255, dtype='uint8')
 
 img = cv.imread('cat.jpg') # numpy array
 
