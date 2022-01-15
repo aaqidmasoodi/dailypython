@@ -17,6 +17,8 @@ low_H.pack()
 low_S.pack()
 low_V.pack()
 
+# 26,69,69
+# 69,359,359
 
 # i've also added some labels and stuff for your understanding...
 # low_h.set(int) # to set an initial value for a slider
@@ -61,9 +63,6 @@ while True:
  # filtering out
 
  filtered_frame = cv.bitwise_and(frame, frame, mask=mask)
-
-
-
 
  cv.imshow('Video', frame)
  cv.imshow('filter', filtered_frame)
