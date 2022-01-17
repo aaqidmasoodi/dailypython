@@ -1,0 +1,33 @@
+Machine Learning PipeLine (Rough)
+- Importing the Data
+* This Step involves importing the data set.
+* You can use the pandas library to achieve this
+
+- Cleaning the data
+* This involves getting the data set ready and in a
+ usuable form.
+* you could select a region of interest, maybe drop the duplicates, etc, etc
+* you must also indentify the Input and Output set.
+
+- Analysing the data set
+* using various techniques, we can try to analyse the data set
+ by plotting various parameters with other to get a sense of nature of the data
+* based on our analysis we can try to select the proper algorithms.
+
+
+- Spliting the data into training set and testing set
+* we must split the data set into testing and traing so that we 
+can know how accurate out model is later on
+
+- Training the model
+* we must use the trainig data to traig the model
+
+- Making predictions
+* the testing input can be used to ask the model for Output
+
+- Checking the accuracy
+* once we have the predictions, we can compare it with the testing Output
+
+- Saving the model
+* often times, training the model can take very long
+ hence, once we have trained the model, we can also save it.
