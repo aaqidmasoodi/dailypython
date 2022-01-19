@@ -3,6 +3,7 @@ Machine Learning PipeLine (Rough)
 * This Step involves importing the data set.
 * You can use the pandas library to achieve this
 
++++++++++++++++++++++++++++++++++++++++++++++++++++
 - Cleaning the data
 * This involves getting the data set ready and in a
  usuable form.
@@ -13,7 +14,7 @@ Machine Learning PipeLine (Rough)
 * using various techniques, we can try to analyse the data set
  by plotting various parameters with other to get a sense of nature of the data
 * based on our analysis we can try to select the proper algorithms.
-
+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 - Spliting the data into training set and testing set
 * we must split the data set into testing and traing so that we 
