@@ -48,7 +48,7 @@ screen.onkeypress(paddle_b_down, 'Down')
 
 
 
-f = open('game2.csv', 'w')
+f = open('game_data.csv', 'w')
 
 
 f.write(f'x,y,dx,dy,paddley\n')

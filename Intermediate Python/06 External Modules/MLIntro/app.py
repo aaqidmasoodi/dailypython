@@ -3,7 +3,9 @@ import time
 import joblib
 import pandas as pd
 
-model = joblib.load('pongAI2.joblib')
+
+
+model = joblib.load('pongAI.joblib')
 
 # Main Window
 screen = models.window()
@@ -14,12 +16,12 @@ border_bottom = models.shape(stretch_len=800//20, x=0, y=-290)
 
 # Ball
 ball = models.shape(type='circle')
-ball.dx = 2
-ball.dy = 2
+ball.dx = 4
+ball.dy = 4
 
 # paddle A
 paddle_a = models.shape(stretch_wid=5, x=-360)
-
+paddle_a.speed(1)
 
 # paddle B
 paddle_b = models.shape(stretch_wid=5, x=360)
@@ -65,9 +67,9 @@ while True:
     if ball.ycor() > 270 or ball.ycor() < -270:
         ball.dy *= -1
 
-    if ball.xcor() > 390 or ball.xcor() < -390:
+    if ball.xcor() > 350 or ball.xcor() < -390:
         ball.dx *= -1
-        ball.goto(0,0)
+        # ball.goto(0,0)
 
     # paddle collision
 
@@ -86,12 +88,11 @@ while True:
     
 
     new_y = model.predict(to_predict)
+    
 
-    print(new_y)
+    paddle_a.sety(int(new_y))
 
-    # paddle_a.sety(int(new_y))
 
-    # paddle_a.sety(ball.ycor()) # why this cannot?
 
 
     screen.update()
